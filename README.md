@@ -1,6 +1,6 @@
 # Crop Yield Prediction using Machine Learning 
 
-![crop prediction image](https://drive.google.com/file/d/1rRiB1GU_Ue4M1H2vlZpMo-5fp4wcebW_/view?usp=sharing)
+![crop prediction image](https://github.com/Tinu01kumar/Crop_prediction_ml_pipeline/blob/main/templates/Screenshot%20(270).png)
 
 ## Overview
 
