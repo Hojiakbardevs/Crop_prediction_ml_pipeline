@@ -14,10 +14,10 @@ The project consists of four main components:
 
  **src/:**  Contains the main application code and prediction pipeline.<br>
  **components/:** Contains modules for data ingestion, data transformation, and model training.
- pipeline.
- **pipeline/:** Contains two main pipelines - prediction_pipeline and train_pipeline.
- **logs/:** Folder to store logs generated during the project.
- **utils/:** Contains utility functions for logging, exception handling,  saving/loading objects and extracting data from mongodb.
+ pipeline.<br>
+ **pipeline/:** Contains two main pipelines - prediction_pipeline and train_pipeline.<br>
+ **logs/:** Folder to store logs generated during the project.<br>
+ **utils/:** Contains utility functions for logging, exception handling,  saving/loading objects and extracting data from mongodb.<br>
  **exception/:** To handle exceptions and raise custom exceptions with detailed error messages.
 
 
@@ -36,15 +36,15 @@ pip install -r requirements.txt
 ##Pipeline Overview
 The project pipeline consists of the following stages:
 
-**Data Ingestion:** Connect to MongoDB and retrieve the dataset.
-**Data Preprocessing:** Handle missing values, scale numerical features, and encode categorical features.
-**Model Training:** Train various regression models to predict crop yields.
-**Model Evaluation:** Evaluate the trained models using R-squared score.
-**Prediction:** Deploy the best-performing model for crop yield prediction via a web interface.
+**Data Ingestion:** Connect to MongoDB and retrieve the dataset.<br>
+**Data Preprocessing:** Handle missing values, scale numerical features, and encode categorical features.<br>
+**Model Training:** Train various regression models to predict crop yields.<br>
+**Model Evaluation:** Evaluate the trained models using R-squared score.<br>
+**Prediction:** Deploy the best-performing model for crop yield prediction via a web interface.<br>
 
 
 ## Data Ingestion
-**Data Source:** The dataset is retrieved from a MongoDB database. It includes features such as nutrient levels (N, P, K), pH, rainfall, temperature, area in hectares, state name, crop type, and crop.
+**Data Source:** The dataset is retrieved from a MongoDB database. It includes features such as nutrient levels (N, P, K), pH, rainfall, temperature, area in hectares, state name, crop type, and crop.<br>
 
 **Process**
 - Connect to MongoDB and retrieve data.
@@ -52,10 +52,10 @@ The project pipeline consists of the following stages:
 - Split the data into training and testing sets.
 
 ## Data Transformation
-**Preprocessing:** The data undergoes the following preprocessing steps:
-**Imputation:**  Missing values are imputed using median for numerical features and most frequent value for categorical features.
-**Scaling:** Numerical features are scaled using StandardScaler.
-**Encoding:** Categorical features are encoded using OrdinalEncoder.
+**Preprocessing:** The data undergoes the following preprocessing steps:<br>
+**Imputation:**  Missing values are imputed using median for numerical features and most frequent value for categorical features.<br>
+**Scaling:** Numerical features are scaled using StandardScaler.<br>
+**Encoding:** Categorical features are encoded using OrdinalEncoder.<br>
 
 
 
@@ -78,13 +78,13 @@ The models are evaluated using R-squared score on the test set. The best-perform
 
 
 
-##Prediction Pipeline
+## Prediction Pipeline
 
-The **prediction_pipeline** folder contains the following components:
+The **prediction_pipeline** folder contains the following components:<br>
 
-**PredictPipeline Class:** This class loads the preprocessed data and the trained model to make predictions.
+**PredictPipeline Class:** This class loads the preprocessed data and the trained model to make predictions.<br>
 
-**CustomData Class:** This class takes input features and converts them into a DataFrame suitable for prediction.
+**CustomData Class:** This class takes input features and converts them into a DataFrame suitable for prediction.<br>
 
 
 ## Deployment
