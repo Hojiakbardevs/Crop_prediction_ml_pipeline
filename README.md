@@ -12,7 +12,7 @@ The project consists of four main components:
 
 ## Project Structure
 
-### components/: +1:  Contains modules for data ingestion, data transformation, and model training.
+### components/:+1: Contains modules for data ingestion, data transformation, and model training.
 ###utils/: 
 Contains utility functions for logging, exception handling, and saving/loading objects.
 ###src/: 
