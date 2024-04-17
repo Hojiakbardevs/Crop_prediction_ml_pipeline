@@ -1,7 +1,6 @@
-# Crop Yield Prediction using Machine Learning 
-
+# 🌾Crop Yield Prediction using Machine Learning 
 ![crop prediction image](https://github.com/Tinu01kumar/Crop_prediction_ml_pipeline/blob/main/templates/Screenshot%20(270).png)
-
+🖼
 ## Overview
 
 This project aims to predict the quantity of production for various types of crops using Machine Learning. 
