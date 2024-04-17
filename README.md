@@ -41,9 +41,13 @@ pip install -r requirements.txt
 The project pipeline consists of the following stages:
 
 **Data Ingestion:** Connect to MongoDB and retrieve the dataset.<br>
+
 **Data Preprocessing:** Handle missing values, scale numerical features, and encode categorical features.<br>
+
 **Model Training:** Train various regression models to predict crop yields.<br>
+
 **Model Evaluation:** Evaluate the trained models using R-squared score.<br>
+
 **Prediction:** Deploy the best-performing model for crop yield prediction via a web interface.<br>
 
 
@@ -57,8 +61,11 @@ The project pipeline consists of the following stages:
 
 ## Data Transformation
 **Preprocessing:** The data undergoes the following preprocessing steps:<br>
+
 **Imputation:**  Missing values are imputed using median for numerical features and most frequent value for categorical features.<br>
+
 **Scaling:** Numerical features are scaled using StandardScaler.<br>
+
 **Encoding:** Categorical features are encoded using OrdinalEncoder.<br>
 
 
