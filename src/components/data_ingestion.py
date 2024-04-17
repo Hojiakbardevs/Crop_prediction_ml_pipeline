@@ -4,10 +4,10 @@ import pandas as pd
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from logger import logging
 from exception import CustomException
-
+from utils import retrieve_data_from_mongodb
 from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
-import pymongo
+
 
 
 @dataclass
@@ -20,7 +20,7 @@ class DataIngestionConfig:
 
     @property
     def train_data_path(self):
-        return os.path.join(self.Dataset_folder, self.train_data_filename)
+        return os.path.join(self.Dataset_folder,  self.train_data_filename)
 
     @property
     def test_data_path(self):
@@ -34,20 +34,16 @@ class DataIngestionConfig:
 class DataIngestion:
     def __init__(self):
         self.ingestion_config = DataIngestionConfig()
-
+#fetching data
     def retrieve_data_from_mongodb_and_save_to_csv(self):
         try:
-            Database_url=pymongo.MongoClient("mongodb+srv://tinu01edu:TwdBZVrtCJYEfhUg@cluster0.mflhl32.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-            db = Database_url['CROP_PRODUCTION_ML']
-            collection = db['projectData']
-            data_from_mongodb = list(collection.find())
-            df = pd.DataFrame(data_from_mongodb)
-            df.drop('_id', axis=1, inplace=True)
+            df=retrieve_data_from_mongodb()
+           
 
-            # Create the data folder if it doesn't exist
+            
             os.makedirs(self.ingestion_config.raw_data_folder, exist_ok=True)
 
-            # Save DataFrame to CSV file in the data folder
+          
             df.to_csv(self.ingestion_config.raw_data_path, index=False)
 
             return self.ingestion_config.raw_data_path
