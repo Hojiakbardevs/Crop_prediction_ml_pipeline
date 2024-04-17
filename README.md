@@ -12,15 +12,11 @@ The project consists of four main components:
 
 ## Project Structure
 
-** components/:** Contains modules for data ingestion, data transformation, and model training.
-### utils/: 
-Contains utility functions for logging, exception handling, and saving/loading objects.
-### src/: 
-Contains the main application code and prediction pipeline.
-### dataset/:
-Folder to store dataset files and trained models.
-### logs/: 
-Folder to store logs generated during the project.
+ **components/:** Contains modules for data ingestion, data transformation, and model training.
+ **utils/:** Contains utility functions for logging, exception handling, and saving/loading objects.
+ **src/:**  Contains the main application code and prediction pipeline.
+ **dataset/:** Folder to store dataset files and trained models.
+ **logs/:** Folder to store logs generated during the project.
 
 ## Installation
 To install the required packages, run:
@@ -38,12 +34,9 @@ Split the data into training and testing sets.
 ### Preprocessing
 The data undergoes the following preprocessing steps:
 
-#### Imputation: 
-Missing values are imputed using median for numerical features and most frequent value for categorical features.
-### Scaling:
-Numerical features are scaled using StandardScaler.
-### Encoding:
-Categorical features are encoded using OrdinalEncoder.
+ **Imputation:**  Missing values are imputed using median for numerical features and most frequent value for categorical features.
+ **Scaling:** Numerical features are scaled using StandardScaler.
+ **Encoding:** Categorical features are encoded using OrdinalEncoder.
 
 
 
