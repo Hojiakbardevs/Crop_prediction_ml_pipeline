@@ -12,7 +12,7 @@ The project consists of four main components:
 
 ## Project Structure
 
- **src/:**  Contains the main application code and prediction pipeline.
+ **src/:**  Contains the main application code and prediction pipeline.<br>
  **components/:** Contains modules for data ingestion, data transformation, and model training.
  pipeline.
  **pipeline/:** Contains two main pipelines - prediction_pipeline and train_pipeline.
