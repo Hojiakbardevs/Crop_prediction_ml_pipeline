@@ -1,5 +1,7 @@
 # Crop Yield Prediction using Machine Learning 
 
+![crop prediction image](https://drive.google.com/file/d/1rRiB1GU_Ue4M1H2vlZpMo-5fp4wcebW_/view?usp=sharing)
+
 ## Overview
 
 This project aims to predict the quantity of production for various types of crops using Machine Learning. 
