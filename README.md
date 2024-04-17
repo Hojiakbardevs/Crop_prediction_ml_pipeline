@@ -12,18 +12,17 @@ The project consists of four main components:
 
 ## Project Structure
 
-### components/:
-Contains modules for data ingestion, data transformation, and model training.
-###utils/: 
+** components/:** Contains modules for data ingestion, data transformation, and model training.
+### utils/: 
 Contains utility functions for logging, exception handling, and saving/loading objects.
-###src/: 
+### src/: 
 Contains the main application code and prediction pipeline.
-###dataset/:
+### dataset/:
 Folder to store dataset files and trained models.
-###logs/: 
+### logs/: 
 Folder to store logs generated during the project.
 
-##Installation
+## Installation
 To install the required packages, run:
 pip install -r requirements.txt
 
