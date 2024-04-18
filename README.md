@@ -11,7 +11,7 @@ The project consists of four main components:
 - Data Transformation, 
 - Model Training, 
 - Prediction Pipeline.
-- 
+  
 
 ## Project Structure
 
