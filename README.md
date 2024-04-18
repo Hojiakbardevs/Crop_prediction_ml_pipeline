@@ -116,7 +116,7 @@ Visit **[http://localhost:5000](http://127.0.0.1:5000/)** in your web browser to
 ## Dataset
 The dataset used in this project is taken from Kaggle and can be found here.
 
-**[https://www.kaggle.com/datasets/gautamshah2002/india-crop-data-with-validation](https://www.kaggle.com/datasets/gautamshah2002/india-crop-data-with-validation)**
+**[https://www.kaggle.com/datasets/asishpandey/crop-production-in-india?select=Crop_production.csv](https://www.kaggle.com/datasets/asishpandey/crop-production-in-india?select=Crop_production.csv)**
 
 
 
