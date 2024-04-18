@@ -40,7 +40,7 @@ pip install -r requirements.txt
 - datetime==5.5
 
 
-##Pipeline Overview
+## Pipeline Overview
 The project pipeline consists of the following stages:
 
 **Data Ingestion:** Connect to MongoDB and retrieve the dataset.<br>
