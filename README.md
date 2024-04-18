@@ -21,6 +21,7 @@ The project consists of four main components:
  pipeline.<br>
  
  **pipeline/:** Contains two main pipelines - prediction_pipeline and train_pipeline.<br>
+ 
  **logs/:** Folder to store logs generated during the project.<br>
  
  **utils/:** Contains utility functions for logging, exception handling,  saving/loading objects and extracting data from mongodb.<br>
