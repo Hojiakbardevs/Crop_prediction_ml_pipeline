@@ -23,7 +23,7 @@ class ModelTrainer():
 
     def initiate_model_training(self, train_array, test_array): 
         try: 
-            logging.info("Seggregating the dependent and independent variables")
+            logging.info("Bog‘liq va mustaqil o‘zgaruvchilarni ajratib olish")
             X_train, y_train, X_test, y_test = (train_array[:, :-1], 
                                                 train_array[:,-1], 
                                                 test_array[:, :-1], 

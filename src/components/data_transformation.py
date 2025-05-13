@@ -30,11 +30,23 @@ class DataTransformation:
             numerical_cols = ['N', 'P', 'K', 'pH', 'rainfall', 'temperature', 'Area_in_hectares']
             
             # Define the custom ranking for each ordinal variable
-            state_name_list = ['andaman and nicobar islands', 'andhra pradesh', 'arunachal pradesh', 'assam', 'bihar', 'chandigarh', 'chhattisgarh', 'dadra and nagar haveli', 'goa', 'gujarat', 'haryana', 'himachal pradesh', 'jammu and kashmir', 'jharkhand', 'karnataka', 'kerala', 'madhya pradesh', 'maharashtra', 'manipur', 'meghalaya', 'mizoram', 'nagaland', 'odisha', 'puducherry', 'punjab', 'rajasthan', 'sikkim', 'tamil nadu', 'telangana', 'tripura', 'uttar pradesh', 'uttarakhand', 'west bengal']
-            
-            crop_type_list = ['kharif', 'rabi', 'whole year', 'summer']
-            crop_list = ['rice', 'turmeric', 'sweetpotato', 'moong', 'maize', 'cashewnuts', 'blackpepper', 'arecanut', 'pumpkin', 'cardamom', 'soyabean', 'banana', 'brinjal', 'grapes', 'orange', 'tapioca', 'ladyfinger', 'barley', 'drumstick', 'jute', 'sunflower', 'apple', 'jackfruit', 'bottlegourd', 'cotton', 'coffee', 'sesamum', 'garlic', 'potato', 'beetroot', 'onion', 'rapeseed', 'horsegram', 'ragi', 'jowar', 'wheat', 'coriander', 'ginger', 'cabbage', 'mango', 'tomato', 'cucumber', 'papaya', 'ridgegourd', 'bittergourd', 'cauliflower', 'ashgourd', 'pomegranate', 'watermelon', 'carrot', 'blackgram', 'radish', 'pineapple']
-            
+            state_name_list = ['andijan', 'bukhara', 'fergana', 'jizzakh', 'kashkadarya','navoiy', 'namangan', 'samarkand', 'sirdarya', 'surkhandarya','tashkent', 'khorezm', 'karakalpakstan']
+  
+            crop_type_list = [
+                                'qishki',        # Noyabr–mart
+                                'bahorgi',       # Mart–may
+                                'yozgi',         # Iyun–avgust
+                                'kop_yillik'     # Uzluksiz o‘stiriladigan
+                            ]
+            crop_list = [
+                            'wheat', 'rice', 'maize_grain', 'maize_silo', 'cotton',
+                            'potato', 'tomato', 'cucumber', 'onion', 'carrot', 'garlic',
+                            'cabbage', 'cauliflower', 'radish', 'beetroot',
+                            'pumpkin', 'soyabean', 'sunflower', 'groundnut',
+                            'chickpea', 'blackgram', 'mung_bean', 'lentil',
+                            'pea', 'broad_bean'
+                        ]
+
             logging.info('Pipeline Initiated')
 
             ## Numerical Pipeline

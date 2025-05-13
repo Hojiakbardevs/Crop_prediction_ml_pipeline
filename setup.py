@@ -16,9 +16,10 @@ def get_requirements(file_path:str)-> List[str]:
 setup(
     name = "crop_yield_prediction", 
     version = "0.0.1", 
-    author = "Tinu kumar", 
-    description= "Prediction of the quantity of production for various types of crops.",
-    author_email= "Tinu01edu@gmail.com", 
+    author = "Xasanov Dilmurod, Abdulhakimov Hojiakbar, Raximov Nodir", 
+    description= "Donli ekinlar hosilini oldindan aytish uchun mo'ljallangan loyiha",
+    long_description= "Bu loyiha O'zbekistonning turli viloyatlarida donli ekinlar hosilini oldindan aytish uchun mo'ljallangan. Ushbu loyiha ma'lumotlarni to'plash, tozalash, o'zgartirish va mashinani o'rganish modellarini yaratishni o'z ichiga oladi. Ushbu loyiha yordamida fermerlar hosilni oldindan bilib olishlari va resurslarni samarali ravishda boshqarishlari mumkin.",
+    author_email= "Abdulhakimovhojiakbar@gmail.com", 
     install_requires = get_requirements("requirements.txt"),
     packages= find_packages()
     )

@@ -25,13 +25,13 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-           
+
             /* Increased margin for spacing */
         }
 
         .form-group {
             flex: 1;
-            margin:20px;
+            margin: 20px;
             /* Increased margin for spacing */
         }
 
@@ -80,7 +80,7 @@
 
 <body>
     <h1>Crop Yield Prediction</h1>
-    
+
     <form action="{{url_for('predict_datapoint')}}" method="POST">
 
         <!-- First Row -->
@@ -129,39 +129,20 @@
             <div class="form-group">
                 <label for="State_Name">State Name:</label>
                 <select id="State_Name" name="State_Name">
-                    <option value="andaman and nicobar islands">Andaman And Nicobar Islands</option>
-                    <option value="andhra pradesh">Andhra Pradesh</option>
-                    <option value="arunachal pradesh">Arunachal Pradesh</option>
-                    <option value="assam">Assam</option>
-                    <option value="bihar">Bihar</option>
-                    <option value="chandigarh">Chandigarh</option>
-                    <option value="chhattisgarh">Chhattisgarh</option>
-                    <option value="dadra and nagar haveli">Dadra And Nagar Haveli</option>
-                    <option value="goa">Goa</option>
-                    <option value="gujarat">Gujarat</option>
-                    <option value="haryana">Haryana</option>
-                    <option value="himachal pradesh">Himachal Pradesh</option>
-                    <option value="jammu and kashmir">Jammu And Kashmir</option>
-                    <option value="jharkhand">Jharkhand</option>
-                    <option value="karnataka">Karnataka</option>
-                    <option value="kerala">Kerala</option>
-                    <option value="madhya pradesh">Madhya Pradesh</option>
-                    <option value="maharashtra">Maharashtra</option>
-                    <option value="manipur">Manipur</option>
-                    <option value="meghalaya">Meghalaya</option>
-                    <option value="mizoram">Mizoram</option>
-                    <option value="nagaland">Nagaland</option>
-                    <option value="odisha">Odisha</option>
-                    <option value="puducherry">Puducherry</option>
-                    <option value="punjab">Punjab</option>
-                    <option value="rajasthan">Rajasthan</option>
-                    <option value="sikkim">Sikkim</option>
-                    <option value="tamil nadu">Tamil Nadu</option>
-                    <option value="telangana">Telangana</option>
-                    <option value="tripura">Tripura</option>
-                    <option value="uttar pradesh">Uttar Pradesh</option>
-                    <option value="uttarakhand">Uttarakhand</option>
-                    <option value="west bengal">West Bengal</option>
+                    <option value="andijan">Andijan</option>
+                    <option value="bukhara">Bukhara</option>
+                    <option value="fergana">Fergana</option>
+                    <option value="jizzakh">Jizzakh</option>
+                    <option value="kashkadarya">Kashkadarya</option>
+                    <option value="navoiy">Navoiy</option>
+                    <option value="namangan">Namangan</option>
+                    <option value="samarkand">Samarkand</option>
+                    <option value="sirdarya">Sirdarya</option>
+                    <option value="surkhandarya">Surkhandarya</option>
+                    <option value="tashkent">Tashkent</option>
+                    <option value="khorezm">Khorezm</option>
+                    <option value="karakalpakstan">Republic of Karakalpakstan</option>
+
 
                 </select>
             </div>
@@ -169,10 +150,11 @@
             <div class="form-group">
                 <label for="Crop_Type">Crop Type:</label>
                 <select id="Crop_Type" name="Crop_Type">
-                    <option value="kharif">Kharif</option>
-                    <option value="rabi">Rabi</option>
-                    <option value="whole year">Whole Year</option>
-                    <option value="summer">Summer</option>
+                    <option value="qishki">Qishki ekinlar</option>
+                    <option value="bahorgi">Bahorgi ekinlar</option>
+                    <option value="yozgi">Yozgi ekinlar</option>
+                    <option value="kop_yillik">Ko‘p yillik ekinlar</option>
+
 
                 </select>
             </div>
@@ -183,59 +165,36 @@
             <div class="form-group">
                 <label for="Crop">Crop:</label>
                 <select id="Crop" name="Crop">
-                    <option value="rice">Rice</option>
-                    <option value="turmeric">Turmeric</option>
-                    <option value="sweetpotato">Sweetpotato</option>
-                    <option value="moong">Moong</option>
-                    <option value="maize">Maize</option>
-                    <option value="cashewnuts">Cashewnuts</option>
-                    <option value="blackpepper">Blackpepper</option>
-                    <option value="arecanut">Arecanut</option>
-                    <option value="pumpkin">Pumpkin</option>
-                    <option value="cardamom">Cardamom</option>
-                    <option value="soyabean">Soyabean</option>
-                    <option value="banana">Banana</option>
-                    <option value="brinjal">Brinjal</option>
-                    <option value="grapes">Grapes</option>
-                    <option value="orange">Orange</option>
-                    <option value="tapioca">Tapioca</option>
-                    <option value="ladyfinger">Ladyfinger</option>
-                    <option value="barley">Barley</option>
-                    <option value="drumstick">Drumstick</option>
-                    <option value="jute">Jute</option>
-                    <option value="sunflower">Sunflower</option>
-                    <option value="apple">Apple</option>
-                    <option value="jackfruit">Jackfruit</option>
-                    <option value="bottlegourd">Bottlegourd</option>
-                    <option value="cotton">Cotton</option>
-                    <option value="coffee">Coffee</option>
-                    <option value="sesamum">Sesamum</option>
-                    <option value="garlic">Garlic</option>
-                    <option value="potato">Potato</option>
-                    <option value="beetroot">Beetroot</option>
-                    <option value="onion">Onion</option>
-                    <option value="rapeseed">Rapeseed</option>
-                    <option value="horsegram">Horsegram</option>
-                    <option value="ragi">Ragi</option>
-                    <option value="jowar">Jowar</option>
                     <option value="wheat">Wheat</option>
-                    <option value="coriander">Coriander</option>
-                    <option value="ginger">Ginger</option>
-                    <option value="cabbage">Cabbage</option>
-                    <option value="mango">Mango</option>
+                    <option value="rice">Rice</option>
+                    <option value="maize_grain">Maize (grain)</option>
+                    <option value="maize_silo">Maize (silage)</option>
+                    <option value="cotton">Cotton</option>
+                    <option value="potato">Potato</option>
                     <option value="tomato">Tomato</option>
                     <option value="cucumber">Cucumber</option>
-                    <option value="papaya">Papaya</option>
-                    <option value="ridgegourd">Ridgegourd</option>
-                    <option value="bittergourd">Bittergourd</option>
-                    <option value="cauliflower">Cauliflower</option>
-                    <option value="ashgourd">Ashgourd</option>
-                    <option value="pomegranate">Pomegranate</option>
-                    <option value="watermelon">Watermelon</option>
+                    <option value="onion">Onion</option>
                     <option value="carrot">Carrot</option>
-                    <option value="blackgram">Blackgram</option>
+                    <option value="garlic">Garlic</option>
+                    <option value="cabbage">Cabbage</option>
+                    <option value="cauliflower">Cauliflower</option>
                     <option value="radish">Radish</option>
-                    <option value="pineapple">Pineapple</option>
+                    <option value="beetroot">Beetroot</option>
+                    <option value="pumpkin">Pumpkin</option>
+                    <option value="soyabean">Soyabean</option>
+                    <option value="sunflower">Sunflower</option>
+                    <option value="groundnut">Groundnut</option>
+                    <option value="chickpea">Chickpea</option>
+                    <option value="blackgram">Blackgram</option>
+                    <option value="mung_bean">Mung Bean</option>
+                    <option value="lentil">Lentil</option>
+                    <option value="pea">Pea</option>
+                    <option value="broad_bean">Broad Bean</option>
+                    <option value="grapes">Grapes</option>
+                    <option value="apple">Apple</option>
+                    <option value="pomegranate">Pomegranate</option>
+                    <option value="melon">Melon</option>
+                    <option value="watermelon">Watermelon</option>
 
                 </select>
             </div>
